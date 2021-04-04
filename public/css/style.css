@@ -302,6 +302,7 @@ nav.mobile-nav {
     padding-bottom: 62%;
     position: relative;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .service .black-box {
