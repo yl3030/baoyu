@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶毓科技 - BAOYUKEJI OFFICIAL WEBSITE</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+   <!-- swiper CSS CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- my CSS CDN -->
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container flex-style">
+            <a href="index.html"><img class="logo" src="https://www.baoyukeji.net/images/logo.png" alt="寶毓科技"></a>
+            <nav>
+                <i class="fas fa-times menu-close"></i>
+                <ul class="d-inline-block">
+                    <li class="d-inline-block mx-lg-3 mx-0"><a href="#">部落中心</a></li>
+                    <li class="d-inline-block mx-lg-3 mx-0"><a href="#">電子商務</a></li>
+                </ul>
+                <div class="d-inline-block user-box">
+                    <a href="#" class="user">會員中心</a>
+                </div>
+            </nav>
+            <div class="menu">
+                <img src="./public/img/menu.png" alt="">
+            </div>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#">部落中心</a></li>
+            <li><a href="#">電子商務</a></li>
+            <li><a href="#">會員中心</a></li>
+        </ul>
+    </nav>
+    <div class="swiper-container" id="banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg" style="background-image:url(./public/img/banner3.jpg)">
+                <img src="./public/img/banner3.jpg" alt="寶毓科技">
+                <h3 class="slogan" data-swiper-parallax-y="300" data-swiper-parallax-opacity="0">產品資訊整合解決方案<br>找我們就對了!</h3>
+            </div>
+            <!-- <div class="swiper-slide bg" style="background-image:url(./public/img/banner2.jpg)">
+                <img src="./public/img/banner2.jpg" alt="寶毓科技">
+            </div> -->
+            <div class="swiper-slide bg" style="background-image:url(./public/img/banner1.jpg)">
+                <img src="./public/img/banner1.jpg" alt="寶毓科技">
+                <img class="swiper-pic" src="./public/img/swiper-pic.png" alt="" data-swiper-parallax-y="300" data-swiper-parallax-opacity="0">
+                <ul class="swiper-text" data-swiper-parallax-y="-300" data-swiper-parallax-opacity="0">
+                    <li>RWD響應式設計</li>
+                    <li>虛擬主機代管</li>
+                    <li>備援資料安全性</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination container" id="banner-pag"></div>
+
+        <!-- 箭頭 -->
+        <div class="Sprev arrow">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="Snext arrow">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content1" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>企業官網</h4>
+                        <p>OFFICIAL SITE</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">我們採用RWD響應式網頁設計，跨平台自動偵測使用者上網的裝置尺寸，給使用者最佳瀏覽畫面。</p>
+                    <p class="en-content">We use RWD-responsive web design, cross-platform automatically detects the
+                        size of the user's
+                        Internet device, giving users the best view of the screen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content2" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>智慧型裝置</h4>
+                        <p>SMART DEVICE</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">我們在不同的載具上，透過科技來導入生活應用。不論在何處，隨時可以接收即時的資訊，立即決定。</p>
+                    <p class="en-content">We are on different devices, through the application of science and technology to import life. No matter where you are, ready to receive real-time information, the decision immediately.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content3" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>雲端服務</h4>
+                        <p>CLOUD SERVICES</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">我們在雲端服務，提供安全穩定的機房和主機代管。在IaaS, PaaS, SaaS的客戶安心在市場推廣產品。</p>
+                    <p class="en-content">Our cloud services to provide security and stability of the IDC and hosting. Confidence in the market to promote their products in IaaS, PaaS, SaaS customers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content4" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>遊戲娛樂</h4>
+                        <p>GAME ENTERTAINMENT</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">我們在遊戲娛樂，提供認證的授權產品，多達700款。提供合法的經營業者，在市場上更有競爭力。</p>
+                    <p class="en-content">We in games and entertainment, to provide certified licensed products, have 700 kind product. Provide legitimate business operators in the market more competitive.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content5" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>金流服務</h4>
+                        <p>FINANCIAL SERVICES</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">多元的線上金流收付款項解決方案，讓提供有價內容網站者可以專心經營，讓消費者可以隨意使用自己覺得便利的付款方式。</p>
+                    <p class="en-content">Multi-line payment solution for online payments, so that those who provide valuable content site can concentrate on business, so that consumers can feel free to use their convenient payment method.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content6" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>資訊安全</h4>
+                        <p>INFORMATION SECURITY</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">協助評估弱點掃描，防毒防駭防漏洞，建立企業資訊安全政策。</p>
+                    <p class="en-content">Assist in assessing vulnerability scans, anti-virus and anti-virus vulnerabilities, and establishing enterprise information security policies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content7" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>資訊委外</h4>
+                        <p>INFORMATION OUTSOURCING</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">將企業內資訊及資安方面事務交付專業廠商處理，企業可專注於提升核心事務和本業專注度，以較低成本獲得專業級服務，進一步提升公司經營模式。</p>
+                    <p class="en-content">The enterprise information and security aspects of the transaction to deal with professional firms, enterprises can focus on enhancing the core business and the industry focus, at a lower cost access to professional-grade services to further enhance the company's business model.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade service-content" id="service-content8" tabindex="-1" aria-labelledby="service-contentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="service-title">
+                        <h4>影音平台</h4>
+                        <p>VIDEO PLATFORM</p>
+                    </div>
+                    <i class="far fa-times-circle" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <p class="ch-content">無論是網播，點播視頻點播，節目廣播等音視頻業務，針對需求和應用，專業技術和規劃，打造專屬視頻平台。</p>
+                    <p class="en-content">Whether it is a webcast, on-demand VOD, program broadcast and other audio and video services, in response to the needs and applications, professional technology and planning to create the exclusive video platform</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt">
+        <h3 class="title mb-4">
+            <span>服務項目</span>
+            <span>| SERVICE</span>
+        </h3>
+        <div class="row service">
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content1">
+                <div class="pic-box bg" style="background-image: url(./public/img/web.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/web.jpg" alt="企業官網">
+                    <div class="text-bg"></div>
+                    <h5>企業官網</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content2">
+                <div class="pic-box bg" style="background-image: url(./public/img/web.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/web.jpg" alt="智慧型裝置">
+                    <div class="text-bg"></div>
+                    <h5>智慧型裝置</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content3">
+                <div class="pic-box bg" style="background-image: url(./public/img/cloud.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/cloud.jpg" alt="雲端服務">
+                    <div class="text-bg"></div>
+                    <h5>雲端服務</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content4">
+                <div class="pic-box bg" style="background-image: url(./public/img/game.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/game.jpg" alt="遊戲娛樂">
+                    <div class="text-bg"></div>
+                    <h5>遊戲娛樂</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content5">
+                <div class="pic-box bg" style="background-image: url(./public/img/money.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/money.jpg" alt="金流服務">
+                    <div class="text-bg"></div>
+                    <h5>金流服務</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content6">
+                <div class="pic-box bg" style="background-image: url(./public/img/security.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/security.jpg" alt="資訊安全">
+                    <div class="text-bg"></div>
+                    <h5>資訊安全</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content7">
+                <div class="pic-box bg" style="background-image: url(./public/img/outsiding.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/outsiding.jpg" alt="資訊委外">
+                    <div class="text-bg"></div>
+                    <h5>資訊委外</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-4 mb-2" data-bs-toggle="modal" data-bs-target="#service-content8">
+                <div class="pic-box bg" style="background-image: url(./public/img/video.jpg);">
+                    <div class="black-box"></div>
+                    <img src="./public/img/video.jpg" alt="影音平台">
+                    <div class="text-bg"></div>
+                    <h5>影音平台</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about mt">
+        <div class="container">
+            <h3 class="title mb-4">
+                <span>關於我們</span>
+                <span>| ABOUT US</span>
+            </h3>
+        </div>
+        <div class="bg" style="background-image: url(./public/img/aboutus.jpg);background-attachment:fixed">
+            <p class="container">
+                公司於2014年12月成立。<br>
+                不同的領域中，深入了解企業的需求，提出符合企業經營的策略方向，並提供技術上的服務快速解決企業營運上的需求。<br>
+                秉持誠信（Integrity）、服務（Service）、專業（Profession）、創意（Creative）、行動（Action）的理念，服務客戶群。
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="container idea flex-style">
+        <div>
+            <img class="d-block mx-auto w-50" src="./public/img/honesty.png" alt="誠信">
+            <h5>誠信</h5>
+        </div>
+        <div>
+            <img class="d-block mx-auto w-50" src="./public/img/service.png" alt="服務">
+            <h5>服務</h5>
+        </div>
+        <div>
+            <img class="d-block mx-auto w-50" src="./public/img/professional.png" alt="專業">
+            <h5>專業</h5>
+        </div>
+        <div>
+            <img class="d-block mx-auto w-50" src="./public/img/creative.png" alt="創意">
+            <h5>創意</h5>
+        </div>
+        <div>
+            <img class="d-block mx-auto w-50" src="./public/img/active.png" alt="行動">
+            <h5>行動</h5>
+        </div>
+    </div>
+
+    <div class="contact mt">
+        <div class="container">
+            <h3 class="title mb-4">
+                <span>聯絡我們</span>
+                <span>| CONTACT US</span>
+            </h3>
+        </div>
+        <div class="contact-box bg" style="background-image: url(./public/img/contact.jpg);background-attachment:fixed">
+            <form class="mx-auto px-lg-5 py-lg-5 px-3 py-5 flex-style">
+                <div class="my-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(+886) 02-8287-1846</span>
+                </div>
+                <div class="flex-style mb-3 form-name">
+                    <label for="#name">姓名</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="flex-style mb-3 form-phone">
+                    <label for="#phone">電話</label>
+                    <input type="phone" id="phone">
+                </div>
+                <div class="flex-style mb-3 form-content">
+                    <label for="#content">內容</label>
+                    <textarea id="content" cols="30" rows="10"></textarea>
+                </div>
+                <button class="send">送出</button>
+            </form>
+        </div>
+    </div>
+    <div class="container mt client">
+        <h3 class="title mb-4">
+            <span>我們的客戶</span>
+            <span>| OUR CLIENT</span>
+        </h3>
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/1.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/2.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/3.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/4.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/5.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/6.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/7.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/8.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/9.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/10.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/11.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/12.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/13.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/14.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/15.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/16.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6 position-relative">
+                <a href="#" class="client-box">
+                    <img class="d-block mx-auto" src="https://www.baoyukeji.net/images/brand/17.jpg" alt="">
+                    <div class="img-box d-block mx-auto"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="mt">
+        <div class="container flex-style">
+            <div class="list">
+                <div class="privacy">
+                    <a href="#">使用條款</a>
+                    <a href="#">隱私權</a>
+                </div>
+                <div class="footer-service">
+                <span>系統整合</span>
+                <span>|</span>
+                <span>跨平台設計</span>
+                <span>|</span>
+                <span>遊戲娛樂平台</span>
+                <span>|</span>
+                <span>影音平台</span>
+                <span>|</span>
+                <span>電子商務平台</span>
+            </div>
+                <p>© 2015 by 寶毓科技 - BAOYUKEJI. All Rights Reserved - If there's any tort, please inform
+                    immediately.有任何侵權行為，請立即告知。</p>
+            </div>
+            <div class="link">
+                <div class="social">
+                    <img src="https://www.baoyukeji.net/images/line_qr_m.png" alt="">
+                    <img src="https://www.baoyukeji.net/images/facebook_2.jpg" alt="">
+                </div>
+                <div class="share">
+                    <a href="#"><i class="fab fa-line"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- awesomefont CDN -->
+    <script src="https://kit.fontawesome.com/69fd600045.js" crossorigin="anonymous"></script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+    <!-- swiper JS CDN -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- my JS CDN -->
+    <script src="./public/js/index.js"></script>
+</body>
+
+</html>
