@@ -10,6 +10,8 @@ body {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -1116,85 +1118,7 @@ nav.mobile-nav {
     color: #fff;
 }
 
-/* member */
-.member-box {
-    margin-top: 120px;
-}
 
-.member-box .mb {
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    background-color: #fff;
-    padding: 25px;
-}
-
-.member-box .member-nav .pic {
-    width: 50%;
-    height: 0;
-    padding-bottom: 50%;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-}
-
-.member-box .member-nav h3 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 28px;
-    word-wrap: break-word;
-    word-break: break-all;
-    margin-bottom: 20px;
-}
-
-.member-box .member-nav ul {
-    padding: 0;
-    width: 100%;
-}
-
-.member-box .member-nav ul li {
-    text-align: center;
-    margin: 5px 0;
-    width: 100%;
-}
-
-.member-box .member-nav ul li a {
-    display: block;
-    padding: 10px 0;
-    width: 100%;
-    border-radius: 500px;
-}
-
-.member-box .member-nav ul li a.active {
-    color: #fff;
-    font-weight: 700;
-    background: linear-gradient(to top, #eb8e7a, #e3789f);
-    background: -o-linear-gradient(to top, rgba(235, 142, 122, 1), rgba(227, 120, 159, 1));
-    background: -moz-linear-gradient(to top, rgba(235, 142, 122, 1), rgba(227, 120, 159, 1));
-    background: -webkit-linear-gradient(to top, rgba(235, 142, 122, 1), rgba(227, 120, 159, 1));
-}
-
-.member-box .member-nav ul li a:hover {
-    color: #fff;
-    font-weight: 700;
-    background: linear-gradient(to top, #eb8e7a, #e3789f);
-    background: -o-linear-gradient(to top, rgba(235, 142, 122, 1), rgba(227, 120, 159, 1));
-    background: -moz-linear-gradient(to top, rgba(235, 142, 122, 1), rgba(227, 120, 159, 1));
-    background: -webkit-linear-gradient(to top, rgba(235, 142, 122, 1), rgba(227, 120, 159, 1));
-}
-
-.member-box .member-content .mb-title {
-    font-size: 35px;
-    font-weight: 900;
-    text-align: center;
-    color: var(--main-color);
-    margin-bottom: 30px;
-}
-
-/* member-calender */
-
-#calendar {
-    max-width: 1100px;
-    margin: 0 auto;
-}
 
 /* goto-top */
 
@@ -1299,6 +1223,8 @@ footer .list p {
         padding: 0 15px;
         border-radius: 0 0 20px 20px;
         display: none;
+        overflow-y: scroll;
+        max-height: 100vh;
     }
     header nav i.fas {
         display: block;
