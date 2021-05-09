@@ -6,6 +6,12 @@ $(".menu-close").click(function(){
 	$("header").children("div").children("nav").slideUp(300);
 })
 
+// 單選
+$(".single-choice").children("div").click(function(){
+	$(".single-choice").children("div").removeClass("active");
+	$(this).addClass("active");
+})
+
 // 輪播圖
 var Rswiper = new Swiper("#banner", {
 	loop: true,
