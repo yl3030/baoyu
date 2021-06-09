@@ -428,6 +428,17 @@ body {
     color: #4d4d4d;
 }
 
+.form-modal .modal-content select {
+    outline: none;
+    width: 90%;
+    height: 35px;
+    border: 1px solid #a7a7a7;
+    border-radius: 8px;
+    padding: 5px 10px;
+    letter-spacing: 1.2px;
+    color: #4d4d4d;
+}
+
 .form-modal .modal-content textarea {
     outline: none;
     width: 90%;
@@ -497,6 +508,34 @@ body {
     width: 100%;
     margin-top: 20px;
     font-size: 18px;
+}
+
+.form-modal.calendar-modal label {
+    width: 20%;
+}
+
+.form-modal.calendar-modal .modal-content input {
+    width: 80%;
+}
+
+.form-modal.calendar-modal .modal-content select {
+    width: 80%;
+}
+
+.form-modal.calendar-modal .form-group {
+    margin-bottom: 20px;
+}
+
+.fc-day-grid-container.fc-scroller {
+    height: auto !important;
+}
+
+.fc-toolbar .fc-left {
+    margin-top: 20px;
+}
+
+.fc-toolbar .fc-right {
+    margin-top: 20px;
 }
 
 /* message */
@@ -587,7 +626,6 @@ body {
     display: block;
 }
 
-
 @media screen and (max-width: 768px) {
     .user-box a.user {
         display: none;
@@ -598,12 +636,13 @@ body {
     .m-member-nav {
         display: block;
     }
-    .member-box .member-nav {
-        margin-bottom: 25px;
-    }
     .member-box .member-nav ul {
         display: none;
     }
+    .member-box .member-nav {
+        margin-bottom: 25px;
+    }
+    
 }
 
 @media screen and (max-width: 570px) {
